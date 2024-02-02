@@ -29,8 +29,3 @@ partition=$(lsblk -l|grep a3 |awk '{ print $1}')
 mkfs.xfs /dev/${partition} -f
 chown student.student -R /home/student/.ssh
 chmod -R 600 /home/student/.ssh/*
-rm -f /root/original-ks.cfg
-#sed -i '10,41d' /root/anaconda-ks.cfg
-
-# Example
-# https://github.com/myllynen/misc/blob/master/rhel-9-base.ks
