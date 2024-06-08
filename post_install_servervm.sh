@@ -4,7 +4,7 @@ cat <<EOF > /etc/motd.d/course
  ( R | H | S | A ) ( C | o | u | r | s | e )
   \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ 
    Instructor: Jose Mantilla -- Udemy $(date +%Y)
-                            Server machine
+                            Server machine v2.0
 EOF
 IP1=$(hostname -I|grep -v 127.0.0.1|awk '{ print $1}')
 echo "$(hostname -I|grep -v 127.0.0.1|awk '{ print $1}') $(hostname -s) $(hostname -f)" >> /etc/hosts
