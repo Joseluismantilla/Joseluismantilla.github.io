@@ -41,6 +41,9 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .dark-red {
+            color: #8B0000;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -49,6 +52,25 @@
             padding: 10px;
             text-align: center;
             border: 0px solid #ffffff;
+        }
+        .centered-row td {
+            text-align: center;
+        }
+        .gray-text {
+            color: gray;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto; /* Center the container */
+        }
+        table {
+            width: 100%; /* Table takes up 100% of the container's width */
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
         }
     </style>
 </head>
@@ -67,9 +89,30 @@
 <p> </p>
     <h1><span style="color: #ffffff;">Welcome to the RHSA - Red Hat System Administration Course v2.0</span></h1>
     <h3>Compatible with RHEL 9.x, Rocky Linux 9.x, Alma Linux 9.x, and Euro Linux 9.x</h3>
-    <h4 style="background-color: #333333; color: #ffffff;">New version released on June 30, 2024!</h4>
-    <h3><strong>Coming soon</strong>: Red Hat Enterprise Linux AI / Rocky Linux with AI (extra content)</h3>
+    <h4 style="background-color: #333333; color: #ffffff;">New version released on Sept 17, 2024!</h4>
+    <h3><span class="dark-red">Coming soon</span>: Red Hat Enterprise Linux AI / Rocky Linux with AI (extra content)</h3>
     <img src="images/image1.png" alt="Screenshot">
+    <h2>Course status</h2>
+    <p class="gray-text">The following table describes recommendations for the course.</p>
+    <div class="container">
+    <table>
+        <tr class="centered-row" bgcolor="#333333" >
+            <th>Description</th>
+            <th>Status</th>
+            <th>Solution</th>
+        </tr>
+        <tr bgcolor="#dcdcdc" style="color: #000000">
+            <td>Virtual Box 7</td>
+            <td>Issues with logon screen reported</td>
+            <td>Downgrade to version 6.1 -- validated on Sept 18 and 19.</td>
+        </tr>
+        <tr bgcolor="#555555" style="color: #ffffff">
+            <td>Rocky & Rhel AI</td>
+            <td>Internal tests (in process)</td>
+            <td>Filesystem / must have 30G as minimum, you should extend the VGS and LVM once you've finished the course or to use new Linux VM.</td>
+        </tr>
+    </table>
+    </div>
     <h2>Screenshots</h2>
     <!-- Uncomment the following lines if you want to include more images -->
     <!-- <img src="images/support.png" alt="Support Screenshot"> -->
