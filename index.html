@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,27 +5,30 @@
     <link rel="icon" type="image/x-icon" href="/images/image1.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHSA - Red Hat System Administration Course v2.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         body {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #000;
+            color: #fff;
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 20px;
         }
         h1, h3, h4 {
-            color: #888888;
+            color: #888;
         }
         img {
             max-width: 100%;
             height: auto;
         }
         .image-container {
-            float: left; /* Float the image to the left */
-            margin-right: 20px; /* Add some space between the image and other content */
+            float: left;
+            margin-right: 20px;
         }
         a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
         }
         a:hover {
@@ -34,7 +36,7 @@
         }
         .download-button {
             background-color: #8B0000;
-            color: #ffffff;
+            color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -51,89 +53,91 @@
         th, td {
             padding: 10px;
             text-align: center;
-            border: 0px solid #ffffff;
-        }
-        .centered-row td {
-            text-align: center;
+            border: 1px solid #000;
         }
         .gray-text {
             color: gray;
         }
         .container {
             width: 60%;
-            margin: 0 auto; /* Center the container */
+            margin: 0 auto;
         }
-        table {
-            width: 100%; /* Table takes up 100% of the container's width */
-            border-collapse: collapse;
+        .icon {
+            margin-right: 10px;
         }
-        th, td {
-            border: 1px solid black;
-            text-align: center;
-            padding: 8px;
+        .slider {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .slider img {
+            width: 300px; /* Set the desired width */
+            height: 200px; /* Set the desired height */
+            object-fit: cover; /* Ensure the image covers the area */
+            margin: 0 2px; /* Reduce the space between images */
         }
     </style>
 </head>
 <body>
-    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"> Let's get started! </a></button>
-<table>
+    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"><i class="fas fa-download icon"></i>Let's get started!</a></button>
+    <table>
         <tr>
             <td><img src="images/rhelai.png" alt="Red Hat Enterprise Linux"></td>
             <td><img src="images/rocky_banner.png" alt="Rocky Linux"></td>
             <td><img src="images/almalinux_banner.jpg" alt="Alma Linux"></td>
         </tr>
-        <!-- Add more rows as needed -->
-</table>
-    <p> </p>
-<p> </p>
-<p> </p>
-    <h1><span style="color: #ffffff;">Welcome to the RHSA - Red Hat System Administration Course v2.0</span></h1>
+    </table>
+    <h1>Welcome to the RHSA - Red Hat System Administration Course v2.0</h1>
     <h3>Compatible with RHEL 9.x, Rocky Linux 9.x, Alma Linux 9.x, and Euro Linux 9.x</h3>
-    <h4 style="background-color: #333333; color: #ffffff;">New version released on Sept 17, 2024!</h4>
-    <h3><span class="dark-red">Coming soon</span>: Red Hat Enterprise Linux AI / Rocky Linux with AI (extra content)</h3>
+    <h4 style="background-color: #333; color: #fff;">New version released on Sept 17, 2024!</h4>
+    <h3 class="dark-red">Coming soon: Red Hat Enterprise Linux AI / Rocky Linux with AI (extra content)</h3>
     <img src="images/image1.png" alt="Screenshot">
     <h2>Course status</h2>
     <p class="gray-text">The following table describes recommendations for the course.</p>
     <div class="container">
-    <table>
-        <tr class="centered-row" bgcolor="#333333" >
-            <th>Description</th>
-            <th>Status</th>
-            <th>Solution</th>
-        </tr>
-        <tr bgcolor="#dcdcdc" style="color: #000000">
-            <td>Virtual Box 7</td>
-            <td>Issues with logon screen reported</td>
-            <td>Downgrade to version 6.1 -- validated on Sept 18 and 19.</td>
-        </tr>
-        <tr bgcolor="#555555" style="color: #ffffff">
-            <td>Rocky & Rhel AI</td>
-            <td>Internal tests (in process)</td>
-            <td>Filesystem / must have 30G as minimum, you should extend the VGS and LVM once you've finished the course or to use new Linux VM.</td>
-        </tr>
-    </table>
+        <table>
+            <tr style="background-color: #333; color: #fff;">
+                <th>Description</th>
+                <th>Status</th>
+                <th>Solution</th>
+            </tr>
+            <tr style="background-color: #dcdcdc; color: #000;">
+                <td>Virtual Box 7</td>
+                <td>Issues with logon screen reported</td>
+                <td>Downgrade to version 6.1 -- validated on Sept 18 and 19.</td>
+            </tr>
+            <tr style="background-color: #555; color: #fff;">
+                <td>Rocky & Rhel AI</td>
+                <td>Internal tests (in process)</td>
+                <td>Filesystem must have 30G as minimum, you should extend the VGS and LVM once you've finished the course or use a new Linux VM.</td>
+            </tr>
+        </table>
     </div>
     <h2>Screenshots</h2>
-    <!-- Uncomment the following lines if you want to include more images -->
-    <!-- <img src="images/support.png" alt="Support Screenshot"> -->
-    <img src="images/rocky.png" alt="Rocky Linux Screenshot">
-    <p> </p>
-    <img src="images/gnome1.png" alt="Gnome Explanations">
-    <p> </p>
-    <img src="images/gnome.png" alt="Gnome with Desktop Applications">
-    <p> </p>
-    <img src="images/support.png" alt="Example of support video explanation">
-    <p> </p>
-    <img src="images/almalinux.png" alt="Gnome with Alma Linux">
-    <!-- <img src="images/lvm.png" alt="LVM Slides"> -->
-    <!-- Add any other content you'd like -->
-    <p> </p>
+    <div class="slider">
+        <div><img src="images/rocky.png" alt="Rocky Linux Screenshot"></div>
+        <div><img src="images/gnome1.png" alt="Gnome Explanations"></div>
+        <div><img src="images/gnome.png" alt="Gnome with Desktop Applications"></div>
+        <div><img src="images/support.png" alt="Example of support video explanation"></div>
+        <div><img src="images/almalinux.png" alt="Gnome with Alma Linux"></div>
+    </div>
     <img src="udemy.png" alt="Udemy Logo">
-    <h4 style="background-color: #8B0000; color: #ffffff;"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A">Link to the course with referal code</a></h4>
-    <p> </p>
-    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"> Let's get started! </a></button>
-    <!-- Additional images in a table -->
-    
+    <h4 style="background-color: #8B0000; color: #fff;"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A"><i class="fas fa-link icon"></i>Link to the course with referral code</a></h4>
+    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"><i class="fas fa-download icon"></i>Let's get started!</a></button>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 400,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
 </body>
 </html>
