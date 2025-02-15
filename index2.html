@@ -2,112 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="/images/image1.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RHSA - Red Hat System Administration Course v2.0</title>
+    <title>RHSA - Red Hat System Administration Course</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         body {
-            background-color: #000;
+            font-family: 'Arial', sans-serif;
             color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 20px;
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        h1, h3, h4 {
-            color: #fff;
-        }
-        h3, h4 {
-            color: #888;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .image-container {
-            float: left;
-            margin-right: 20px;
-        }
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .download-button {
+        header {
             background-color: #8B0000;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .dark-red {
-            color: #8B0000;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
+            padding: 20px;
             text-align: center;
-            border: 1px solid #000;
         }
-        .gray-text {
-            color: gray;
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
         }
-        .container {
-            width: 60%;
-            margin: 0 auto;
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #222;
         }
-        .icon {
-            margin-right: 10px;
+        .hero-section h2 {
+            font-size: 2rem;
         }
-        .slider {
-            width: 80%;
-            margin: 20px auto;
+        .cta-button {
+            background-color: #c00;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        .slider img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            margin: 0 2px;
+        .cta-button:hover {
+            background-color: #a00;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .feature-card {
+            background: #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        }
+        footer {
+            background-color: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
-    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"><i class="fas fa-download icon"></i>Let's get started!</a></button>
-    
-    <h1>Welcome to the RHSA - Red Hat System Administration Course v2.1</h1>
-    <h3>Compatible with RHEL 9.x, Rocky Linux 9.x, Alma Linux 9.x, and Euro Linux 9.x</h3>
-    <h4 style="background-color: #333; color: #fff;">New version released on Oct 01, 2024!</h4>
-    <h3 class="dark-red">Released: Red Hat Enterprise Linux AI / Rocky Linux with AI (extra content)</h3>
-    
-    <div class="slider">
-        <div><img src="images/rocky.png" alt="Rocky Linux Screenshot"></div>
-        <div><img src="images/gnome1.png" alt="Gnome Explanations"></div>
-        <div><img src="images/gnome.png" alt="Gnome with Desktop Applications"></div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 400,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
-        });
-    </script>
+    <header>
+        <h1>Red Hat System Administration Course</h1>
+    </header>
+
+    <section class="hero-section">
+        <h2>Master RHEL 9, Rocky Linux, and Alma Linux</h2>
+        <p>Gain industry-recognized skills with our comprehensive RHSA course.</p>
+        <a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank" class="cta-button">Get Started Now</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-server fa-3x"></i>
+            <h3>Real-World Labs</h3>
+            <p>Get hands-on experience with RHEL 9, Rocky, and Alma Linux.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-video fa-3x"></i>
+            <h3>HD Video Lessons</h3>
+            <p>Learn through expertly crafted, high-quality videos.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-users fa-3x"></i>
+            <h3>Community Support</h3>
+            <p>Join a thriving community and interact with your instructors.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RHSA Course. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
