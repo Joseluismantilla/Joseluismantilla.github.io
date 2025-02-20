@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RHSA - Red Hat System Administration Course</title>
+    <title>RHSA - Red Hat System Administration Course - <span id="currentYear"></span></title>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -106,22 +110,20 @@
             <p>Join a thriving community and interact with your instructors.</p>
         </div>
     </section>
- <h2>Screenshots</h2>
-    <div class="slider">
-        <div><img src="images/rocky.png" alt="Rocky Linux Screenshot"></div>
-        <div><img src="images/gnome1.png" alt="Gnome Explanations"></div>
-        <div><img src="images/gnome.png" alt="Gnome with Desktop Applications"></div>
-        <div><img src="images/support.png" alt="Example of support video explanation"></div>
-        <div><img src="images/almalinux.png" alt="Gnome with Alma Linux"></div>
-        <div><img src="images/rhelai.png" alt="Red Hat Enterprise Linux"></div>
-        <div><img src="images/rocky_banner.png" alt="Rocky Linux"></div>
-        <div><img src="images/almalinux_banner.jpg" alt="Alma Linux"></div>
-        <div><img src="images/rhcsa.png" alt="RHCSA Logo"></div>
-    </div>
-    <img src="udemy.png" alt="Udemy Logo"><br>
-    <img src="images/course_score.png" alt="Score course">
-    <h4 style="background-color: #8B0000; color: #fff;"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A"><i class="fas fa-link icon"></i>Link to the course with referral code</a></h4>
-    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"><i class="fas fa-download icon"></i>Let's get started!</a></button>
+  <section class="hero-section">
+   <h2>Screenshots</h2>
+      <div class="slider">
+          <div><img src="images/rocky.png" alt="Rocky Linux Screenshot"></div>
+          <div><img src="images/gnome1.png" alt="Gnome Explanations"></div>
+          <div><img src="images/gnome.png" alt="Gnome with Desktop Applications"></div>
+          <div><img src="images/support.png" alt="Example of support video explanation"></div>
+          <div><img src="images/almalinux.png" alt="Gnome with Alma Linux"></div>
+          <div><img src="images/rhelai.png" alt="Red Hat Enterprise Linux"></div>
+          <div><img src="images/rocky_banner.png" alt="Rocky Linux"></div>
+          <div><img src="images/almalinux_banner.jpg" alt="Alma Linux"></div>
+          <div><img src="images/rhcsa.png" alt="RHCSA Logo"></div>
+      </div>
+  </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -139,6 +141,10 @@
         });
     </script>
     <footer>
+		<img src="udemy.png" alt="Udemy Logo"><br>
+    <img src="images/course_score.png" alt="Score course">
+    <h4 style="background-color: #8B0000; color: #fff;"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A"><i class="fas fa-link icon"></i>Link to the course with referral code</a></h4>
+    <button class="download-button"><a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank"><i class="fas fa-download icon"></i>Let's get started!</a></button>
         <p>&copy; 2025 RHSA Course. All Rights Reserved.</p>
     </footer>
 </body>
