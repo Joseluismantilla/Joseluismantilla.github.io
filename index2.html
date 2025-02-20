@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHSA - Red Hat System Administration Course - <span id="currentYear"></span></title>
-  <script>
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -83,6 +80,9 @@
     </style>
 </head>
 <body>
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
     <header>
         <h1>Red Hat System Administration Course</h1>
     </header>
@@ -123,8 +123,6 @@
           <div><img src="images/almalinux_banner.jpg" alt="Alma Linux"></div>
           <div><img src="images/rhcsa.png" alt="RHCSA Logo"></div>
       </div>
-     <a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank" class="cta-button">Get Started Now</a>
-   
   </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -142,12 +140,14 @@
             });
         });
     </script>
-  
+    <div style="text-align:center">
+      <a href="https://www.udemy.com/course/rhsa-red-hat-system-administration/?referralCode=FDD9A65AD7F048055D8A" target="_blank" class="cta-button" ali>Get Started Now</a>
+    </div>
     <footer>
-		<img src="udemy.png" alt="Udemy Logo"><br>
-    <img src="images/course_score.png" alt="Score course">
+	<img src="udemy.png" alt="Udemy Logo"><br>
+    	<img src="images/course_score.png" alt="Score course">
     
-        <p>&copy; 2025 RHSA Course. All Rights Reserved.</p>
+        <p>&copy; RHSA Course <span id="currentYear"></span>. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
