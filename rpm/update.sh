@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Versión esperada (Objetivo superior, ej: 2.2-2)
-VERSION="2.2-2"  
+VERSION="2.2-1" # Version del nuevo RPM para el curso  
 
 # 1. Obtener la versión completa del RPM instalado (ej: rhsa-2.2-1.el10)
 if ! rpm_out=$(rpm -q rhsa 2>/dev/null); then
@@ -38,12 +38,10 @@ else
     if [[ -f "$COURSE_FILE" ]]; then
         
         # Validamos activación ignorando mayúsculas/minúsculas
-        if grep -iqw "enabled" "$COURSE_FILE"; then
-            echo "[INFO] New update available ($CURRENT_VERSION -> $VERSION). Course is enabled. Proceeding with the update process..."
-            # Aquí se invocaría el update.sh
+        if grep -iq "enabled" "$COURSE_FILE"; then
+            echo "[INFO] New update available. Course is enabled..."
         else
             echo "You should activate the course first before proceed."
-            exit 0
         fi
     else
         echo "[ERROR] The course or file $COURSE_FILE doesn't exist."
