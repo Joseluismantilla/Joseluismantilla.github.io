@@ -43,6 +43,7 @@ else
             # Aquí se invocaría el update.sh
         else
             echo "You should activate the course first before proceed."
+            exit 0
         fi
     else
         echo "[ERROR] The course or file $COURSE_FILE doesn't exist."
